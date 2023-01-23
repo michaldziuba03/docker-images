@@ -1,3 +1,4 @@
-<img src="https://user-images.githubusercontent.com/43048524/214066603-0a8d40a0-89d6-4479-ac6b-25ccd31820bc.png" />
+![images_mongo_large](https://user-images.githubusercontent.com/43048524/214068134-0f8c1fb8-408c-4081-9f5c-e9410aba5b82.png)
 
 ## MongoDB Replica sets
+
