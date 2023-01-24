@@ -3,4 +3,7 @@
 ## MongoDB Replica Set image
 > Do NOT use this image in production environment!
 
-This Docker image is intented for learning and local development. You can use it to test MongoDB transactions, change streams and more.
+This Docker image is intended for learning, CI setups and local development. You can use it to test MongoDB transactions, change streams and more.
+
+## License
+Distributed under the MIT License.
