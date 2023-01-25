@@ -3,4 +3,4 @@
 ## Redis Cluster image
 > Do NOT use this image in production environment!
 
-This Docker image is intented for learning and local development.
+This Docker image is intended for learning and local development.
