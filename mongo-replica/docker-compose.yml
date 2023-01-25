@@ -9,7 +9,6 @@ services:
       - '4001:4001'
       - '4002:4002'
       - '4003:4003'
-      - '27017:27017'
     environment:
       - MONGO_NODES=4000,4001,4002,4003
-      - HOST=localhost
+      - MONGO_HOST=localhost

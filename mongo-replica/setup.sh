@@ -1,9 +1,10 @@
 #!/bin/bash
 echo "Running on ports: $MONGO_NODES"
 
-NODES=$(echo "$MONGO_NODES" | tr "," " ")
-RS="${REPLICA_SET:-rs}"
-HOST="${HOST:-localhost}"
+# Variables defined by user:
+NODES=$(echo "$MONGO_NODES" | tr "," " ") # transform example "2000,3000,4000" to "2000 3000 4000" (we can iterate)
+RS="${REPLICA_SET:-rs}" # replica set name (rs by default)
+HOST="${MONGO_HOST:-localhost}"
 
 ALL_LOG_FILES=""
 FIRST_NODE_PORT=""
@@ -22,7 +23,7 @@ do
   ALL_LOG_FILES="$ALL_LOG_FILES $LOGS_FILE"
   mongod --fork --dbpath $DATA_PATH --logpath $LOGS_FILE --port $node_port --bind_ip_all --replSet $RS
 
-  if test -z "$RS_MEMBERS"
+  if test -z "$RS_MEMBERS" # if RS_MEMBERS is empty - that means this is a first iteration
   then
     FIRST_NODE_PORT="$node_port"
     RS_MEMBERS="{\"_id\": $node_port, \"host\": \"$HOST:$node_port\"}"
