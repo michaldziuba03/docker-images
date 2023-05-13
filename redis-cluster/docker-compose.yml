@@ -1,0 +1,14 @@
+services:
+  redis-cluster:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: always
+    ports:
+      - '6000:6000'
+      - '6001:6001'
+      - '6002:6002'
+      - '6003:6003'
+      - '6004:6004'
+      - '6005:6005'
+
