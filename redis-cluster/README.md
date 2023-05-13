@@ -15,7 +15,7 @@ Redis Cluster requires at least 6 nodes. Docker image by default runs 6 Redis no
 
 ```yaml
 services:
-  mongodb:
+  redis-cluster:
     image: md03/redis-cluster
     restart: always
     ports:
