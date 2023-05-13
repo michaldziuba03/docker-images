@@ -4,6 +4,6 @@ MAINTAINER Michał Dziuba <mail@michaldziuba.dev>
 COPY setup.sh /
 RUN chmod +x /setup.sh
 
-EXPOSE 27017
+EXPOSE 6000
 
 ENTRYPOINT ["sh", "/setup.sh"]

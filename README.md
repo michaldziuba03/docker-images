@@ -11,5 +11,11 @@ You can use this image to test MongoDB transactions, change streams and more.
 docker pull md03/mongo-replica
 ```
 
+### Redis Cluster
+Useful when you need Redis Cluster for development.
+```shell
+docker pull md03/redis-cluster
+```
+
 ### License
 Distributed under the MIT License. See `LICENSE` for more information.
